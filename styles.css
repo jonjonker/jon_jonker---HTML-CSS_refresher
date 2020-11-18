@@ -1,0 +1,148 @@
+.parent {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px auto 200px 100px;
+    height: 500px;
+    grid-template-areas:
+    "h h h h"
+    "m m m m"
+    "f f f f"
+  }
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    grid-area:h;
+}
+
+main {
+    grid-area:m;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    grid-area:f;
+}
+
+h2{
+    margin-bottom: 0px;
+    font-size: 20px;
+}
+
+h3{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    color: rgb(177, 170, 170);
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.5rem;
+}
+
+.box-inline p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    line-height: 1.5rem;
+    font-size: 16px;
+    color: rgb(85, 84, 84);
+}
+
+/* box styling */
+
+.box{
+    margin: 20px;
+    width: 350px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    box-shadow: 1px 2px 2px -2px rgba(0.3, 0, 0, 0.34);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.box-inline{
+    padding: 0px 10px 10px 15px;
+}
+
+.box-inline p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    line-height: 1.5rem;
+    font-size: 16px;
+    color: rgb(85, 84, 84);
+}
+
+hr{
+    display: block;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 10px;
+    background-color: rgb(240, 238, 238);
+    border: 0 none;
+    height: 1px;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.approve-btn{
+    height: 40px;
+    width: 130px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #39b31bd7;
+    border-right: none;
+    color: #39b31bd7;
+    font-size: 1rem;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.decline-btn{
+    height: 40px;
+    width: 130px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #e60909;
+    color: #e60909;
+    font-size: 1rem;
+    border-radius: 0px 5px 5px 0px;
+    }
+
+    .btn p{
+        margin: 0px;
+        font-size: 16px;
+    }
+
+    .bold{
+        font-weight: bold;
+    } 
+
+    aside{
+        display: block;
+    }
+
+    .profielfoto {
+        margin: 10px;
+        display: inline;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: inline;
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
